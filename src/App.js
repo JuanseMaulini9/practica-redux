@@ -9,7 +9,7 @@ import { fetchPokemonsWithDetails } from "./slices/dataSlice";
 
 function App() {
   const pokemons = useSelector(
-    (state) => state.data.pokemons,
+    (state) => state.data.pokemonsFiltered,
     shallowEqual
     // .getIn(['data', 'pokemons'], shallowEqual)
   );
